@@ -1,26 +1,25 @@
-public abstract class QuanCo {
+public class QuanCo {
+    // toa do cua quan co
     int x;
     int y;
 
-    public QuanCo(){
+    // ki hieu nguoi choi
+    int z;
 
+    public QuanCo() {
     }
 
-    public QuanCo(int x, int y){
+    public QuanCo(int x, int y,int z) {
         this.x = x;
         this.y = y;
+        this.z = z;
     }
-
-    public QuanCo(QuanCo quanCo){
-        this.x = quanCo.x;
-        this.y = quanCo.y;
+    
+    public boolean canMoveTo(int  x0,int y0,BanCo bc ){
+        return true;
     }
-
-    public boolean canMove(int x0, int y0){
-        throw new UnsupportedOperationException("Current operation is not support for this object");
-    }
-
-    public void moveTo(int x0, int y0){
-
+    public void moveTo(int x0,int y0,BanCo bc){
+        x = x0;
+        y = y0;
     }
 }
